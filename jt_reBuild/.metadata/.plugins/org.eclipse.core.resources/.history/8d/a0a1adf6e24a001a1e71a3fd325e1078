@@ -1,0 +1,10 @@
+package aa;
+
+public class aa {
+	
+	public static void main(String[] args) {
+		int bb = 1136/1000;
+		System.out.println(bb);
+	}
+
+}

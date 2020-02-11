@@ -1,0 +1,10 @@
+package com.tedu.rabbitmq;
+
+public class Test_1_simple_provider {
+	
+	@Test
+	public void provider() {
+		
+	}
+
+}

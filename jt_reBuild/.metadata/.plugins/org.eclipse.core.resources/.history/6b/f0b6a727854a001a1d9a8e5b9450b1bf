@@ -1,0 +1,15 @@
+package aa;
+
+public class IsHuiWenNum {
+
+	public static void main(String[] args) {
+
+	}
+	
+	public Boolean isPalindrome(int x) {
+        String str = String.valueOf(x);
+        StringBuilder sb = new StringBuilder();
+        return null;
+    }
+
+}

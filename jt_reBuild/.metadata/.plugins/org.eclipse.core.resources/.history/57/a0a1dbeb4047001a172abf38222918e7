@@ -1,0 +1,12 @@
+package com.tedu.rabbitmq;
+
+import org.junit.Test;
+
+public class Test_1_simple_provider {
+	
+	@Test
+	public void provider() {
+		
+	}
+
+}

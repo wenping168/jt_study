@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cn.tedu.client&apos; to &apos;cn.tedu.feign&apos;&#x0D;&#x0A;- Original project: &apos;consumer-feign&apos;&#x0D;&#x0A;- Original element: &apos;consumer-feign/src/main/java/cn.tedu.client&apos;&#x0D;&#x0A;- Renamed element: &apos;consumer-feign/src/main/java/cn.tedu.feign&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cn.tedu.client&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;cn.tedu.client" name="cn.tedu.feign" qualified="false" references="true" stamp="1581237334838" textual="false" version="1.0"/>
+</session>

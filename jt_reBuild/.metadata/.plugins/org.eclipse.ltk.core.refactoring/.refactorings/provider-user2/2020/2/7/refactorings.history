@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;cn.tedu.ProviderRunApp&apos; to &apos;Provider2RunApp&apos;&#x0D;&#x0A;- Original project: &apos;provider-user2&apos;&#x0D;&#x0A;- Original element: &apos;cn.tedu.ProviderRunApp&apos;&#x0D;&#x0A;- Renamed element: &apos;cn.tedu.Provider2RunApp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProviderRunApp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;cn.tedu{ProviderRunApp.java[ProviderRunApp" matchStrategy="1" name="Provider2RunApp" qualified="false" references="true" similarDeclarations="false" stamp="1581230946691" textual="false" version="1.0"/>
+</session>

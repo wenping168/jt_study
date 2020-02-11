@@ -1,0 +1,6 @@
+rabbit.ip=192.168.216.202
+rabbit.port=5672
+rabbit.username=jtadmin
+rabbit.password=jtadmin
+rabbit.vhost=/jt
+

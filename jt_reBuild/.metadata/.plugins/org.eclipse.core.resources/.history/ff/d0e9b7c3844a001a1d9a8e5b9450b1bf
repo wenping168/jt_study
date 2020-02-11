@@ -1,0 +1,10 @@
+package aa;
+
+public class IsHuiWenNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

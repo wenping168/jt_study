@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [04/Feb/2020:13:09:35 +0800] "GET /web/item/findItemById?itemId=562379 HTTP/1.0" 200 429 http-bio-8091-exec-1 1928
+127.0.0.1 - - [04/Feb/2020:13:09:35 +0800] "GET /web/item/findItemDescById/562379 HTTP/1.0" 200 11334 http-bio-8091-exec-2 64
+0:0:0:0:0:0:0:1 - - [04/Feb/2020:13:10:10 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 26200 http-bio-8091-exec-3 761
+127.0.0.1 - - [04/Feb/2020:14:11:43 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 26200 http-bio-8091-exec-4 1637
+0:0:0:0:0:0:0:1 - - [04/Feb/2020:14:11:46 +0800] "GET /web/item/findItemById?itemId=562379 HTTP/1.0" 200 429 http-bio-8091-exec-5 141
+127.0.0.1 - - [04/Feb/2020:14:11:49 +0800] "GET /web/item/findItemDescById/562379 HTTP/1.0" 200 11334 http-bio-8091-exec-6 38

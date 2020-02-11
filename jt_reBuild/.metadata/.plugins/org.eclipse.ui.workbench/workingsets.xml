@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581170685163_2" label="springcloud" name="springcloud">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/provider-user" type="4"/>
+<item elementID="=provider-user" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zuul" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/consumer-feign" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/eureka-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/consumer-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/consumer-hystrix" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/provider-user2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/gateway-zuul" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/sidercar" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581174369897_3" label="javaTest" name="javaTest">
+<item elementID="=aa" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1580721215044_0" label="Window Working Set" name="Aggregate for window 1580721215044"/>
+</workingSetManager>

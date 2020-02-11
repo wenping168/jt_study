@@ -1,0 +1,86 @@
+package com.jt.order.service;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jt.order.mapper.OrderItemMapper;
+import com.jt.order.mapper.OrderMapper;
+import com.jt.order.mapper.OrderShippingMapper;
+import com.jt.order.pojo.Order;
+import com.jt.order.pojo.OrderItem;
+import com.jt.order.pojo.OrderShipping;
+/**
+ * 订单消费者
+ * 发消息rabbitmq框架负责将消息发给rabbitmq服务器
+ * 收消息由rabbitmq框架负责，收到后，调orderMsgConsumer
+ * @author WP
+ *
+ */
+//@Service
+public class OrderMsgConsumer /*implements OrderService*/ {
+	
+	@Autowired
+	private OrderMapper orderMapper;
+	
+	@Autowired
+	private OrderItemMapper orderItemMapper;
+	
+	@Autowired
+	private OrderShippingMapper orderShippingMapper;
+
+	
+	@Override
+	public void saveOrder(Order order) {
+		//鎷兼帴orderId鍙�
+		String orderId = order.getUserId() + "" + System.currentTimeMillis();
+		Date date = new Date();
+		
+		//鍏ュ簱璁㈠崟
+		order.setOrderId(orderId);
+		order.setStatus(1); 
+		order.setCreated(date);
+		order.setUpdated(date);
+		orderMapper.insert(order);
+		System.out.println("璁㈠崟鍏ュ簱鎴愬姛!!!!!");
+		
+		//鑾峰彇璁㈠崟鐗╂祦淇℃伅
+		OrderShipping orderShipping = order.getOrderShipping();
+		orderShipping.setOrderId(orderId);
+		orderShipping.setCreated(date);
+		orderShipping.setUpdated(date);
+		orderShippingMapper.insert(orderShipping);
+		System.out.println("璁㈠崟鐗╂祦淇℃伅鍏ュ簱鎴愬姛!!");
+		
+		//瀹炵幇璁㈠崟鍟嗗搧鍏ュ簱
+		List<OrderItem> orderItemList = order.getOrderItems();
+		for (OrderItem orderItem : orderItemList) {
+			orderItem.setOrderId(orderId);
+			orderItem.setCreated(date);
+			orderItem.setUpdated(date);
+			orderItemMapper.insert(orderItem);
+		}
+		System.out.println("璁㈠崟鍏ュ簱鎴愬姛!!!");
+		//return orderId;
+	}
+	
+
+	/*@Override
+	public Order findOrderById(String orderId) {
+		//1.鑾峰彇order鏁版嵁  2.鑾峰彇orderShipping瀵硅薄 3.鑾峰彇orderItem鏁版嵁
+		//4.灏嗘暟鎹繘琛岀粍瑁�
+		Order order = orderMapper.selectByPrimaryKey(orderId);
+		OrderShipping orderShipping = orderShippingMapper.selectByPrimaryKey(orderId);
+		
+		OrderItem orderItem = new OrderItem();
+		orderItem.setOrderId(orderId);
+		List<OrderItem> orderItems = orderItemMapper.select(orderItem);
+		
+		//鏁版嵁灏佽
+		order.setOrderShipping(orderShipping);
+		order.setOrderItems(orderItems);
+		return order;
+	}*/
+}
